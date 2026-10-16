@@ -1,0 +1,22 @@
+html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#root {
+    min-height: 100vh;
+}
+button, input, textarea, select {
+    color: inherit;
+}
+button {
+    border: none;
+}
+*:focus-visible {
+    outline-offset: 3px;
+}

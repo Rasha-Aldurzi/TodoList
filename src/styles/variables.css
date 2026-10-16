@@ -1,0 +1,80 @@
+:root {
+  /* ==============================
+     Brand Colors
+  ============================== */
+
+  --color-primary: #6d28d9;
+  --color-accent: #b04fd6;
+  --color-accent-light: #d2a6ff;
+
+  --gradient-primary: linear-gradient(
+    90deg,
+    #8a0fc7,
+    #c266cf
+  );
+
+  /* ==============================
+     Dark Theme
+  ============================== */
+
+  --color-page: #06060e;
+  --color-bg: #0a0a1c;
+  --color-card: #0e0e25;
+  --color-input: #12122b;
+  --color-hover: #181840;
+
+  --color-border: #1f1f42;
+  --color-border-input: #28284d;
+
+  --color-text: #ece8f7;
+  --color-text-muted: #8f89a8;
+  --color-text-light: #f1eaff;
+
+  /* ==============================
+     Sidebar
+  ============================== */
+
+  --color-sidebar-start: #2d0a47;
+  --color-sidebar-end: #230838;
+  --color-sidebar-mobile: #1d0733;
+
+  /* ==============================
+     Light Theme
+  ============================== */
+
+  --color-light-bg: #f4f0fa;
+  --color-light-card: #ffffff;
+  --color-light-border: #e4dcf0;
+  --color-light-input: #f3edf9;
+  --color-light-input-border: #ddd0ec;
+  --color-light-hover: #eee5f9;
+
+  --color-light-text: #241338;
+  --color-light-text-muted: #6f6488;
+
+  /* ==============================
+     Status Colors
+  ============================== */
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+
+  /* ==============================
+     Typography
+  ============================== */
+
+  --font-family: "DM Sans", "Inter", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  /* ==============================
+     Border Radius
+  ============================== */
+
+  --radius-sm: 7px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 999px;
+}
