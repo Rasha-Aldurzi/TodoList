@@ -1,0 +1,110 @@
+/* How It Works Section */
+
+.how-it-works-section {
+  padding: 80px 64px;
+  background: var(--color-card);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.how-it-works-title {
+  max-width: 640px;
+  color: var(--color-text);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
+/* Steps Grid */
+
+.steps-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Step Card */
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Step Indicator */
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  background: linear-gradient(135deg, #8a0fc7, #c266cf);
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.step-line {
+  height: 2px;
+  flex: 1;
+  background: linear-gradient(90deg, #6d28d9, transparent);
+}
+
+/* Step Content */
+
+.step-card h3 {
+  color: var(--color-text);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.step-card p {
+  max-width: 320px;
+  color: #b9b0cf;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+/* Tablet */
+
+@media (max-width: 1023px) {
+  .how-it-works-section {
+    padding: 64px 32px;
+  }
+
+  .how-it-works-title {
+    font-size: 34px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-top: 32px;
+  }
+
+  .step-line {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 639px) {
+  .how-it-works-section {
+    padding: 48px 18px;
+  }
+
+  .how-it-works-title {
+    font-size: 28px;
+  }
+}

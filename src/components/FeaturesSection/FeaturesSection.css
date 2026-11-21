@@ -1,0 +1,285 @@
+/* Features Section */
+
+.features-section {
+  padding: 80px 64px;
+}
+
+.features-title {
+  max-width: 640px;
+  color: var(--color-text);
+  font-size: 38px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.features-description {
+  max-width: 560px;
+  margin-top: 12px;
+  color: #b9b0cf;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* Bento Grid */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+/* Feature Card */
+
+.feature-card {
+  min-width: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: hidden;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+}
+
+.feature-card--large {
+  grid-column: span 2;
+}
+
+.feature-card-content h3 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.feature-card-content p {
+  margin-top: 6px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Preview */
+
+.feature-preview {
+  min-width: 0;
+}
+
+/* Tasks */
+
+.feature-task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-task {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.feature-task span {
+  width: 17px;
+  height: 17px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #5a5a85;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.feature-task span.checked {
+  color: white;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.feature-task p {
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+/* Notes */
+
+.feature-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-note {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--color-input);
+  border-radius: var(--radius-md);
+}
+
+.feature-note strong {
+  font-size: 13px;
+}
+
+.feature-note span {
+  color: var(--color-text-muted);
+  font-size: 11px;
+}
+
+/* Projects */
+
+.feature-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-project-info {
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.feature-project-info strong {
+  font-weight: 500;
+}
+
+.feature-project-info > span {
+  color: var(--color-text-muted);
+}
+
+.feature-project-track {
+  height: 5px;
+  overflow: hidden;
+  background: var(--color-hover);
+  border-radius: var(--radius-full);
+}
+
+.feature-project-track span {
+  height: 100%;
+  display: block;
+  background: var(--color-primary);
+  border-radius: inherit;
+}
+
+/* Calendar */
+
+.feature-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.feature-calendar > div {
+  min-height: 75px;
+  padding: 8px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-md);
+}
+
+.feature-calendar > div.active {
+  background: var(--color-hover);
+}
+
+.feature-calendar span {
+  color: var(--color-text-muted);
+  font-size: 11px;
+}
+
+.feature-calendar strong {
+  font-size: 13px;
+}
+
+.feature-calendar i {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.feature-calendar > div:nth-child(2) i,
+.feature-calendar > div:nth-child(3) i,
+.feature-calendar > div:nth-child(4) i {
+  background: #a37cf5;
+}
+
+/* Reports */
+
+.feature-chart {
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.feature-chart span {
+  flex: 1;
+  display: block;
+  background: #8b5cf6;
+  border-radius: 4px 4px 0 0;
+}
+
+.feature-report-summary {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.feature-report-summary strong {
+  font-size: 22px;
+}
+
+.feature-report-summary span {
+  color: var(--color-success);
+  font-size: 12px;
+}
+
+/* Tablet */
+
+@media (max-width: 1023px) {
+  .features-section {
+    padding: 64px 32px;
+  }
+
+  .features-title {
+    font-size: 34px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .features-section {
+    padding: 48px 18px;
+  }
+
+  .features-title {
+    font-size: 28px;
+  }
+
+  .features-description {
+    font-size: 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  .feature-card--large {
+    grid-column: auto;
+  }
+}
