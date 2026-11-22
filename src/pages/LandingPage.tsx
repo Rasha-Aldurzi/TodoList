@@ -2,6 +2,10 @@ import './LandingPage.css';
 import FeaturesSection from '../components/FeaturesSection/FeaturesSection';
 import HowItWorksSection from '../components/HowItWorksSection/HowItWorksSection';
 import RemindersSection from '../components/RemindersSection/RemindersSection';
+import PricingSection from '../components/PricingSection/PricingSection';
+import FAQSection from '../components/FAQSection/FAQSection';
+import CTASection from '../components/CTASection/CTASection';
+import Footer from '../components/Footer/Footer';
 
 const tasks = [
   { title: 'Design homepage UI', priority: 'High', completed: false },
@@ -265,14 +269,22 @@ export default function LandingPage() {
       </section>
 
       <section className="landing-placeholder" id="pricing">
-        <h2>Start free. Upgrade when you need more.</h2>
+        <PricingSection />
       </section>
 
       <section
         className="landing-placeholder landing-placeholder--alternate"
         id="faq"
       >
-        <h2>Questions, answered</h2>
+        <FAQSection />
+      </section>
+      {/* <CTASection /> */}
+      <section className="landing-placeholder" id="cat">
+        <CTASection />
+      </section>
+
+      <section className="landing-placeholder" id="cat">
+        <Footer />
       </section>
     </main>
   );
